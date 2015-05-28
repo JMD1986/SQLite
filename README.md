@@ -39,21 +39,18 @@ so if we enter the code
 
 `
 SELECT * FROM items WHERE category LIKE "book";
-
 `
 
 we dont get anything. If we type in
 
 `
 SELECT * FROM items WHERE category LIKE "books";
-
 `
 
 we will get 4 items. But if we type
 
 `
 SELECT * FROM items WHERE category LIKE "book%";
-
 `
 
 we get 6 items. Our dataset has some pretty ineffecient labeling and its interfering with our technique. If we had a whole lot of time we would go and improve the data a bit more but our code will do fine for now.
@@ -94,7 +91,6 @@ this returns
 `
 id|first_name|last_name|email
 39|Virginie|Mitchell|daisy.crist@altenwerthmonahan.biz
-
 `
 
 So I looked up her address using her user id.
@@ -150,7 +146,6 @@ This one is a bit more involved. We have to determine the id numbers of books. W
 
 `
 SELECT * FROM items WHERE category LIKE "book%";
-
 `
 this of course gave us
 
