@@ -95,13 +95,12 @@ So I looked up her address using her user id.
 
 then I changed her Address the following way
 
-`
-UPDATE addresses SET city = "New York" WHERE id = "41";
+`UPDATE addresses SET city = "New York" WHERE id = "41";`
 
-UPDATE addresses SET zip = "10108" WHERE id = "41";
+`UPDATE addresses SET zip = "10108" WHERE id = "41";`
 
-UPDATE addresses SET state = "NY" WHERE id = 41";
-`
+`UPDATE addresses SET state = "NY" WHERE id = 41";`
+
 
 
 ####6) How much would it cost to buy one of each tool?
