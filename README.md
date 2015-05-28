@@ -46,6 +46,7 @@ we dont get anything. If we type in
 
 `
 SELECT * FROM items WHERE category LIKE "books";
+
 `
 
 we will get 4 items. But if we type
@@ -96,20 +97,76 @@ id|first_name|last_name|email
 
 `
 
+So I looked up her address using her user id.
+
+
+
 then I changed her Address the following way
 
+`
+UPDATE addresses SET city = "New York" WHERE id = "41";
+
+UPDATE addresses SET zip = "10108" WHERE id = "41";
+
+UPDATE addresses SET state = "NY" WHERE id = 41";
+`
 
 
 ####6) How much would it cost to buy one of each tool?
 
+We ask for the sum of the prices in the categories that contain the word tool.
+
+`
+SELECT sum(price) FROM items WHERE category LIKE "tool%";
+`
+
+this gives us
+
+`
+sum(price)
+24605
+`
 
 
 ####7) How many total items did we sell?
 
+We call the sum on the quantity of orders
+
+`
+SELECT sum(quantity) FROM orders;
+`
+
+this gives us
+
+`
+sum(quantity)
+2125
+`
 
 
 ####8) How much was spent on books?
 
+This one is a bit more involved. We have to determine the id numbers of books. We did that previously with:
+
+`
+SELECT * FROM items WHERE category LIKE "book%";
+
+`
+this of course gave us
+
+`
+id|title|category|description|price
+4|Fantastic Steel Chair|Books|Advanced attitude-oriented encryption|9246
+21|Fantastic Rubber Shoes|Books|Reverse-engineered modular hierarchy|8904
+60|Ergonomic Steel Car|Books & Outdoors|Enterprise-wide secondary firmware|9341
+76|Ergonomic Granite Chair|Books|De-engineered bi-directional portal|1496
+97|Incredible Granite Computer|Books, Toys & Tools|De-engineered national policy|2377
+98|Practical Plastic Hat|Books|Implemented non-volatile model|3056
+`
+
+so now we know our user id numbers.
+
+I honestly have no idea how to do this.
 
 ####9) Simulate buying an item by inserting a User for yourself and an Order for that User.
 
