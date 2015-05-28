@@ -24,12 +24,12 @@ SELECT * FROM items ORDER BY price DESC LIMIT 5;
 
 we will get the return
 
-'id|title|category|description|price
+`id|title|category|description|price
 25|Small Cotton Gloves|Automotive, Shoes & Beauty|Multi-layered modular service-desk|9984
 83|Small Wooden Computer|Health|Re-engineered fault-tolerant adapter|9859
 100|Awesome Granite Pants|Toys & Books|Upgradable 24/7 access|9790
 40|Sleek Wooden Hat|Music & Baby|Quality-focused heuristic info-mediaries|9390
-60|Ergonomic Steel Car|Books & Outdoors|Enterprise-wide secondary firmware|9341'
+60|Ergonomic Steel Car|Books & Outdoors|Enterprise-wide secondary firmware|9341`
 
 We went from high to low and limited the results by 5. By limiting the amount we can expect to be returned we can insure we dont get caught loading the entire dataset like we did in the first question. If we have GIANT tables we are wasting processing power by doing that.
 
