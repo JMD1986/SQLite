@@ -2,7 +2,9 @@
 
 ##Knowing how to properly look through a database is essential if we intend to deal with large amount of info.
 
-Here are the questions posed to my and how I answered them
+Here are the questions posed to my and how I answered them.
+
+This is a work in progress.
 
 ####1) How many users are there?
 
@@ -32,8 +34,6 @@ we will get the return
 60|Ergonomic Steel Car|Books & Outdoors|Enterprise-wide secondary firmware|9341`
 
 We went from high to low and limited the results by 5. By limiting the amount we can expect to be returned we can insure we dont get caught loading the entire dataset like we did in the first question. If we have GIANT tables we are wasting processing power by doing that.
-
-edit: I dont know how SQL reads commands and don't know if this is stall basically doing
 
 ####3) Whats the cheapest book?
 
