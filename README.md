@@ -33,6 +33,8 @@ we will get the return
 
 We went from high to low and limited the results by 5. By limiting the amount we can expect to be returned we can insure we dont get caught loading the entire dataset like we did in the first question. If we have GIANT tables we are wasting processing power by doing that.
 
+edit: I dont know how SQL reads commands and don't know if this is stall basically doing
+
 ####3) Whats the cheapest book?
 
 so if we enter the code
@@ -41,7 +43,7 @@ so if we enter the code
 SELECT * FROM items WHERE category LIKE "book";
 `
 
-we dont get anything. If we type in
+we won't get anything. If we type in
 
 `
 SELECT * FROM items WHERE category LIKE "books";
@@ -53,7 +55,7 @@ we will get 4 items. But if we type
 SELECT * FROM items WHERE category LIKE "book%";
 `
 
-we get 6 items. Our dataset has some pretty ineffecient labeling and its interfering with our technique. If we had a whole lot of time we would go and improve the data a bit more but our code will do fine for now.
+we get 6 items. Our dataset has some pretty ineffecient labeling and its interfering with our technique. If we had a whole lot of time we could write some code that could fix this lets just deal with the cards we've been dealt.
 
 
 ####4) Who lives at “6439 Zetta Hills, Willmouth, WY”? Do they have another address?
