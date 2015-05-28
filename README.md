@@ -39,21 +39,15 @@ edit: I dont know how SQL reads commands and don't know if this is stall basical
 
 so if we enter the code
 
-`
-SELECT * FROM items WHERE category LIKE "book";
-`
+`SELECT * FROM items WHERE category LIKE "book";`
 
 we won't get anything. If we type in
 
-`
-SELECT * FROM items WHERE category LIKE "books";
-`
+`SELECT * FROM items WHERE category LIKE "books";`
 
 we will get 4 items. But if we type
 
-`
-SELECT * FROM items WHERE category LIKE "book%";
-`
+`SELECT * FROM items WHERE category LIKE "book%";`
 
 we get 6 items. Our dataset has some pretty ineffecient labeling and its interfering with our technique. If we had a whole lot of time we could write some code that could fix this lets just deal with the cards we've been dealt.
 
